@@ -40,13 +40,13 @@ window.addEventListener('load', function() {
     }
     
     
-    var select_html = `<select id='usrs'> \
+    var user_select_html = `<select id='usrs'> \
 <option value=''>All</option>
 <option>User 1</option>
 <option>User 2</option>
 </select>`;
     
-    $('#ghx-board-name').html($('#ghx-board-name').html() + select_html);
+    $('#ghx-board-name').html($('#ghx-board-name').html() + user_select_html);
     
     $("#usrs").change(showTasks);
 
