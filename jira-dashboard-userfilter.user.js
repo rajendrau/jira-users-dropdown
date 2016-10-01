@@ -39,12 +39,19 @@ window.addEventListener('load', function() {
         //alert(usr);
     }
     
+    var users_list = [
+                      "User name 1",
+                      "User name 2",
+                      "User name 3"
+                     ];
+    var users_len = users_list.length;
+    var user_select_html = "<select id='usrs'>";
+    user_select_html += "<option value=''>All</option>";
+    for(var i=0; i<users_len;i++){
+        user_select_html += "<option>" + users_list[i] + "</option>";
+    }
+    user_select_html += "</select>";
     
-    var user_select_html = `<select id='usrs'> \
-<option value=''>All</option>
-<option>User 1</option>
-<option>User 2</option>
-</select>`;
     
     $('#ghx-board-name').html($('#ghx-board-name').html() + user_select_html);
     
